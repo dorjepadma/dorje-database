@@ -5,7 +5,8 @@ const {
     isArray,
     isObject,
     isFunction,
-    // castToNumber,
+    castToNumber,
+    castToString,
     // getCaster
 } = require('../lib/types.js');
   
@@ -45,14 +46,22 @@ describe('is a function', () => {
         expect(isFunction('hi')).toBeFalsy();
     });
 });
-//     describe('casters', () => {
-//         it ('can cast values to a number', () => {
-//             expect(castToNumber(3)).toEqual(3);
-//             expect(castToNumber('3')).toEqual(3);
-//             expect(castToNumber(true)).toEqual(1);
-//             expect(castToNumber(false)).toEqual(0);
-//         });
-  
+
+//caster tests follow:
+describe('casters', () => {
+    it ('can cast values to a number', () => {
+        expect(castToNumber(3)).toEqual(3);
+        expect(castToNumber('3')).toEqual(3);
+        expect(castToNumber(true)).toEqual(1);
+        expect(castToNumber(false)).toEqual(0);
+    });
+});
+describe('casters', () => {
+    it ('can cast values to a string', () => {
+        expect(castToString(3)).toEqual('3');
+        expect(castToString('3')).toEqual('3');
+    });
+});   
 //         it ('throws if value is not castable to number', () => {
 //             expect(() => castToNumber('hi')).toThrowErrorMatchingSnapshot();
 //             expect(() => castToNumber({})).toThrowErrorMatchingSnapshot();
