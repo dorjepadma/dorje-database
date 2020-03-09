@@ -7,7 +7,9 @@ const {
     isFunction,
     castToNumber,
     castToString,
-    // getCaster
+    castToBoolean,
+    getCaster
+    
 } = require('../lib/types.js');
   
 describe('basic validation', () => {
@@ -55,21 +57,32 @@ describe('casters', () => {
         expect(castToNumber(true)).toEqual(1);
         expect(castToNumber(false)).toEqual(0);
     });
+    it ('throws if value is not castable to number', () => {
+        expect(() => castToNumber('hi')).toThrowErrorMatchingSnapshot();
+        expect(() => castToNumber({})).toThrowErrorMatchingSnapshot();
+    });
 });
 describe('casters', () => {
     it ('can cast values to a string', () => {
         expect(castToString(3)).toEqual('3');
         expect(castToString('3')).toEqual('3');
     });
+    it ('throws if value is not castable to string', () => {
+        expect(() => castToString([])).toThrowErrorMatchingSnapshot();
+        expect(() => castToString({})).toThrowErrorMatchingSnapshot();
+    });
+});
+describe('casters', () => {
+    it ('can cast values to a Boolean', () => {
+        expect(castToBoolean(1)).toEqual(true);
+        expect(castToBoolean(0)).toEqual(false);
+    });
 });   
-//         it ('throws if value is not castable to number', () => {
-//             expect(() => castToNumber('hi')).toThrowErrorMatchingSnapshot();
-//             expect(() => castToNumber({})).toThrowErrorMatchingSnapshot();
-//         });
-//     });
-  
-//     it ('can get the right caster', () => {
-//         expect(getCaster(Number)).toEqual(castToNumber);
-//         expect(getCaster(Promise)).toBeNull();
-//     });
-// });
+it ('throws if value is not castable to Boolean', () => {
+    expect(() => castToBoolean('hi')).toThrowErrorMatchingSnapshot();
+    expect(() => castToBoolean({})).toThrowErrorMatchingSnapshot();
+});
+it ('can get the right caster', () => {
+    expect(getCaster(Number)).toEqual(castToNumber);
+    expect(getCaster(Promise)).toBeNull();
+});
