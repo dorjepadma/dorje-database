@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1583794447170" clover="3.2.0">
+  <project timestamp="1583794447171" name="All files">
+    <metrics statements="19" coveredstatements="10" conditionals="6" coveredconditionals="0" methods="9" coveredmethods="6" elements="34" coveredelements="16" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
+    <file name="types.js" path="/Users/dorjekirsten/Alchemy/dorje-database/lib/types.js">
+      <metrics statements="19" coveredstatements="10" conditionals="6" coveredconditionals="0" methods="9" coveredmethods="6"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
