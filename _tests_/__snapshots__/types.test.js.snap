@@ -11,7 +11,3 @@ exports[`casters throws if value is not castable to string 2`] = `"Cannot cast >
 exports[`throws if value is not castable to Boolean 1`] = `"Cannot cast >>hi<< to Boolean"`;
 
 exports[`throws if value is not castable to Boolean 2`] = `"Cannot cast >>[object Object]<< to Boolean"`;
-
-exports[`throws if value is not castable to number 1`] = `"Cannot cast >>hi<< to Number"`;
-
-exports[`throws if value is not castable to number 2`] = `"Cannot cast >>[object Object]<< to Number"`;
