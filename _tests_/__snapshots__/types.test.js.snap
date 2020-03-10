@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`casters throws if value is not castable to number 1`] = `"Cannot cast >>hi<< to Number"`;
+
+exports[`casters throws if value is not castable to number 2`] = `"Cannot cast >>[object Object]<< to Number"`;
+
+exports[`casters throws if value is not castable to string 1`] = `"Cannot cast >><< to String"`;
+
+exports[`casters throws if value is not castable to string 2`] = `"Cannot cast >>[object Object]<< to String"`;
+
+exports[`throws if value is not castable to Boolean 1`] = `"Cannot cast >>hi<< to Boolean"`;
+
+exports[`throws if value is not castable to Boolean 2`] = `"Cannot cast >>[object Object]<< to Boolean"`;
