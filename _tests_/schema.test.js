@@ -22,9 +22,9 @@ describe('Schema', () => {
         };
 
         expect(schema.validate(dog)).toEqual({
-            name: 'trixie',
+            name: 'cat',
             age: 5,
-            weight: '7 lbs'
+            weight: '11 lbs'
         });
     });
 
