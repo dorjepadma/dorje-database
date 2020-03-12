@@ -1,0 +1,1 @@
+//om mani padme hum is the mantra of Chenrezig, it is said to liberate all six realms of existence. Just to read it means one day you will attain perfect Buddhahood. 
