@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1583991972688" clover="3.2.0">
-  <project timestamp="1583991972688" name="All files">
+<coverage generated="1583995075190" clover="3.2.0">
+  <project timestamp="1583995075190" name="All files">
     <metrics statements="76" coveredstatements="76" conditionals="34" coveredconditionals="33" methods="30" coveredmethods="30" elements="140" coveredelements="139" complexity="0" loc="76" ncloc="76" packages="1" files="4" classes="4"/>
     <file name="Schema.js" path="/Users/dorjekirsten/Alchemy/dorje-database/lib/Schema.js">
       <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="6" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="16" count="6" type="stmt"/>
+      <line num="17" count="6" type="stmt"/>
       <line num="19" count="2" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="6" type="stmt"/>
-      <line num="25" count="2" type="stmt"/>
-      <line num="26" count="2" type="stmt"/>
-      <line num="27" count="2" type="stmt"/>
-      <line num="29" count="6" type="stmt"/>
-      <line num="30" count="6" type="stmt"/>
-      <line num="32" count="2" type="stmt"/>
-      <line num="36" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="1" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
+      <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
     </file>
     <file name="Validator.js" path="/Users/dorjekirsten/Alchemy/dorje-database/lib/Validator.js">
       <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>

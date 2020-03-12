@@ -15,13 +15,13 @@ describe('Schema', () => {
             }
         });
 
-        const dog = {
+        const cat = {
             name: 'cat',
             age: 5,
             weight: '11 lbs'
         };
 
-        expect(schema.validate(dog)).toEqual({
+        expect(schema.validate(cat)).toEqual({
             name: 'cat',
             age: 5,
             weight: '11 lbs'
