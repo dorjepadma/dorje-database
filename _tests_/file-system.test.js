@@ -3,6 +3,7 @@ const {
     mkdirp,
     writeJSON,
     readJSON,
+    readDirectoryJSON
    
 } = require('../lib/file-system');
 
@@ -10,7 +11,8 @@ jest.mock('fs', () => ({
     promises: {
         mkdir: jest.fn(() => Promise.resolve()),
         writeFile: jest.fn(() => Promise.resolve()),
-        readFile: jest.fn(() => Promise.resolve('{"name":"trixie"}'))
+        readFile: jest.fn(() => Promise.resolve('{"name":"trixie"}')),
+        readdir: jest.fn(() => Promise.resolve(['test.json', 'test2.json'])),
     }
 }));
 
@@ -48,6 +50,22 @@ describe ('files system functions', () => {
                 expect(data).toEqual({
                     name:'trixie'
                 });
+            });
+    });
+
+    it('reads a directory of json', () => {
+        return readDirectoryJSON('./data')
+            .then(data => {
+                expect(fs.readdir)
+                    .toHaveBeenCalledWith('./data');
+                expect(fs.readFile)
+                    .toHaveBeenCalledWith('./data/test.json');
+                expect(fs.readFile)
+                    .toHaveBeenCalledWith('./data/test2.json');
+                expect(data).toEqual([
+                    { name: 'trixie' },
+                    { name: 'trixie' }
+                ]);
             });
     });
 });
