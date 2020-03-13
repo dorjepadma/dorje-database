@@ -101,7 +101,7 @@ describe('Model class', () => {
                 expect(foundCat).toEqual({
                     _id: expect.any(String),
                     name: 'trixie',
-                    age: 11,
+                    age: 5,
                     weight: '11 lbs'
                 });
             });
@@ -163,8 +163,8 @@ describe('Model class', () => {
                 weight: '11 lbs'
             }, {
                 name: 'Lotus',
-                age: 10,
-                weight: '20 lbs'
+                age: 5,
+                weight: '12 lbs'
             })
             .then(() => {
                 return Cat
@@ -178,8 +178,8 @@ describe('Model class', () => {
                     weight: '11 lbs'
                 }, {
                     name: 'Lotus',
-                    age: 10,
-                    weight: '20 lbs'
+                    age: 5,
+                    weight: '12 lbs'
                 });
             });
     });
