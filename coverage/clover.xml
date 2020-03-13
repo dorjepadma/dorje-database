@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1583995075190" clover="3.2.0">
-  <project timestamp="1583995075190" name="All files">
+<coverage generated="1584058253563" clover="3.2.0">
+  <project timestamp="1584058253563" name="All files">
     <metrics statements="76" coveredstatements="76" conditionals="34" coveredconditionals="33" methods="30" coveredmethods="30" elements="140" coveredelements="139" complexity="0" loc="76" ncloc="76" packages="1" files="4" classes="4"/>
     <file name="Schema.js" path="/Users/dorjekirsten/Alchemy/dorje-database/lib/Schema.js">
       <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
