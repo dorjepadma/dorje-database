@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1584140973914" clover="3.2.0">
-  <project timestamp="1584140973914" name="All files">
-    <metrics statements="87" coveredstatements="86" conditionals="34" coveredconditionals="33" methods="37" coveredmethods="36" elements="158" coveredelements="155" complexity="0" loc="87" ncloc="87" packages="1" files="5" classes="5"/>
+<coverage generated="1584141224480" clover="3.2.0">
+  <project timestamp="1584141224481" name="All files">
+    <metrics statements="87" coveredstatements="84" conditionals="34" coveredconditionals="33" methods="37" coveredmethods="33" elements="158" coveredelements="150" complexity="0" loc="87" ncloc="87" packages="1" files="5" classes="5"/>
     <file name="Model.js" path="/Users/dorjekirsten/Alchemy/dorje-database/lib/Model.js">
       <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
       <line num="1" count="1" type="stmt"/>
@@ -48,23 +48,23 @@
       <line num="14" count="23" type="stmt"/>
     </file>
     <file name="file-system.js" path="/Users/dorjekirsten/Alchemy/dorje-database/lib/file-system.js">
-      <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12"/>
-      <line num="1" count="2" type="stmt"/>
-      <line num="3" count="6" type="stmt"/>
-      <line num="5" count="7" type="stmt"/>
-      <line num="6" count="7" type="stmt"/>
-      <line num="8" count="21" type="stmt"/>
-      <line num="9" count="21" type="stmt"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="12" count="16" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="19" count="2" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="24" count="2" type="stmt"/>
+      <metrics statements="16" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="9"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="5" count="5" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="8" count="24" type="stmt"/>
+      <line num="9" count="24" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="22" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
     </file>
     <file name="types.js" path="/Users/dorjekirsten/Alchemy/dorje-database/lib/types.js">
       <metrics statements="35" coveredstatements="35" conditionals="24" coveredconditionals="24" methods="13" coveredmethods="13"/>
