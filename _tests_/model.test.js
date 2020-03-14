@@ -3,6 +3,7 @@ const Model = require('../lib/Model');
 
 
 describe('Model class', () => {
+    
     it('creates a new document', () => {
         const schema = new Schema({
             name: {
@@ -35,6 +36,7 @@ describe('Model class', () => {
                 });
             });
     });
+
     it('finds by id and updates', () => {
         const schema = new Schema({
             name: {
@@ -50,24 +52,24 @@ describe('Model class', () => {
             }
         });
   
-        const cat = new Model('cat', schema);
+        const Cat = new Model('Cat', schema);
   
-        return cat
+        return Cat
             .create({
                 name: 'trixie',
                 age: 5,
                 weight: '11 lbs'
             })
             .then(cat => {
-                return cat 
+                return Cat 
                     .findByIdAndUpdate(cat._id, { name: 'lotus' });
             })
-            .then(updatedCat => {
-                expect(updatedCat).toEqual({
+            .then(updateCat => {
+                expect(updateCat).toEqual({
                     _id: expect.any(String),
                     name: 'lotus',
                     age: 5,
-                    weight: '12 lbs'
+                    weight: '11 lbs'
                 });
             });
     });
